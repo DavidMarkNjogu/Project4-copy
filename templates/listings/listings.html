@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Listings</title>
+</head>
+<body>
+    <h1>Property Listings</h1>
+    <ul>
+        {% for listing in listings %}
+            <li><a href="{% url 'listing_detail' listing.id %}">{{ listing.title }}</a>: {{ listing.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
