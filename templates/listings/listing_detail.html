@@ -5,6 +5,9 @@
 </head>
 <body>
     <h1>{{ listing.title }}</h1>
+    {% if listing.image %}
+        <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+    {% endif %}
     <p>{{ listing.description }}</p>
     <p>Price: ${{ listing.price }}</p>
     <p>Location: {{ listing.location }}</p>
