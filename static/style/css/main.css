@@ -1,0 +1,73 @@
+/* Global Styles */
+/* Apply font family and background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure minimum page length */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for header, navigation bar, and footer */
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Remove margin for header titles and footer paragraphs */
+header h1, footer p {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Add margin between navigation items */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Style navigation links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add hover effect to navigation links */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+/* Center container and set maximum width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Center text */
+.text-center {
+    text-align: center;
+}
