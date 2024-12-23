@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Property Listings</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %} Property Listings {% endblock %}
+{% block content %}
     <h1>Property Listings</h1>
     <ul>
         {% for listing in listings %}
@@ -15,5 +14,4 @@
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
