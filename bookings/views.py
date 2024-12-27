@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect  # Importing render and redirect functions
 from django.contrib import messages  # Importing messages for notifications
-
-from listings.models import PropertyListing
-from .models import Booking  # Importing the Booking model
+from listings.models import Booking  # Importing the Booking model
+from .models import PropertyListing  # Importing the PropertyListing model
 from django.core.exceptions import ValidationError  # Importing ValidationError for handling validation errors
 
 def book_property(request):
