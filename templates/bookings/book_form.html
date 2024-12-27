@@ -17,4 +17,20 @@
         <button type="submit">Book Now</button>
     </form>
 
-    
+     
+    {% if error_message %}
+        <div class="alert alert-danger mt-3">
+            <strong>Error:</strong> {{ error_message }}
+        </div>
+    {% endif %}
+        
+    {% if messages %}
+        <div>
+            {% for message in messages %}
+                <div style="color: {% if message.tags == 'error' %}red{% else %}green{% endif %};">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            </div>
+        {% endif %}
+{% endblock %}
