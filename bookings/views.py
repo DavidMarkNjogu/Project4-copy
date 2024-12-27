@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect  # Importing render and redirect functions
+from django.shortcuts import render, redirect, get_object_or_404  # Importing render and redirect functions
 from django.contrib import messages  # Importing messages for notifications
 from .models import Booking  # Importing the Booking model
 from listings.models import PropertyListing  # Importing the PropertyListing model
