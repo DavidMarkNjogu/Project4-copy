@@ -1,5 +1,4 @@
 /* Global Styles */
-/* Apply font family and background color for the entire page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -39,7 +38,7 @@ nav ul li {
 
 /* Style navigation links */
 nav ul li a {
-    color: white;
+    color: white; /* Ensure navigation links are white */
     text-decoration: none;
     font-weight: bold;
 }
@@ -47,6 +46,7 @@ nav ul li a {
 /* Add hover effect to navigation links */
 nav ul li a:hover {
     text-decoration: underline;
+    color: #ccc; /* Slightly lighter color on hover */
 }
 
 /* Main content styling */
@@ -68,6 +68,7 @@ main a {
 
 main a:hover {
     text-decoration: underline;
+    color: green; /* Set the hover color */
 }
 
 /* Utility Classes */
