@@ -23,7 +23,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('listings/', include('listings.urls')),
-    path('', TemplateView.as_view(template_name='home/base.html'), name='home'),
+    path('', TemplateView.as_view(template_name='base.html'), name='home'),
     path('accounts/',include('django.contrib.auth.urls')),  # Django authentication URLs
     # Home page # Serve index.html at the root URL
 ]
