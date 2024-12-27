@@ -4,7 +4,14 @@
     <h1>Book a Property</h1>
     <form method="POST" id="bookingForm">
         {% csrf_token %}  <!-- CSRF token for security -->
-        <input type="text" name="property_id" placeholder="Property ID" required>
+       
+        <label for="property_id">Select Property:</label>
+        <select name="property_id" id="property_id" required>
+            <option value="">-- Select a Property --</option>
+            {% for listing in listings %}
+                <option value="{{ listing.id }}">{{ listing.title }}</option>  <!-- Display only property title -->
+            {% endfor %}
+        </select>
         <input type="date" name="start_date" required>
         <input type="date" name="end_date" required>
         <button type="submit">Book Now</button>
