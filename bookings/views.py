@@ -31,4 +31,7 @@ def book_listing(request):
     listings = PropertyListing.objects.filter(status='Available')  # Adjust the filter as needed      
     return render(request, 'bookings/book_form.html', {'listings': listings})  # Pass listings to the template
 
+def booking_success(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)  # Fetch the booking using the booking ID
+    return render(request, 'bookings/booking_success.html', {'booking': booking})  # Render the success template with booking details
     #return render(request, 'bookings/book_form.html')  # Render the booking form
