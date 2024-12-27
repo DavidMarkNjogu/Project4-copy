@@ -26,6 +26,7 @@ urlpatterns = [
     path("accounts/", include("accounts.urls")), 
     path('accounts/',include('django.contrib.auth.urls')),  # Django authentication URLs
     path('', TemplateView.as_view(template_name='home.html'), name='home'),# Home page # Serve index.html at the root URL
+    path('bookings/', include('bookings.urls')),  # Include bookings URLs
 ]
 
 if settings.DEBUG:
