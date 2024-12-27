@@ -16,12 +16,5 @@
         <input type="date" name="end_date" required>
         <button type="submit">Book Now</button>
     </form>
+
     
-    {% if success_message %}
-        <div style="color: green;">{{ success_message }}</div>  <!-- Display success message -->
-    {% endif %}
-    
-    {% if error_message %}
-        <div style="color: red;">{{ error_message }}</div>  <!-- Display error message -->
-    {% endif %}
-{% endblock %}

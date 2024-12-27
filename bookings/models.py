@@ -29,7 +29,7 @@ class Booking(models.Model):
     # Custom validation to ensure end date is after start date
     def clean(self):
         if self.start_date >= self.end_date:
-            raise ValidationError('End date must be after start date.')
+            raise ValidationError('The end date must be after the start date.')
 
     # String representation of the booking instance
     def __str__(self):
