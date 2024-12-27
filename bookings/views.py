@@ -18,10 +18,11 @@ def book_listing(request):
             end_date=end_date,
         )
         
+ 
         try:
             booking.clean()  # Validate the booking dates
             booking.save()  # Save the booking to the database
-            messages.success(request, f"Booking for property ID {property_id} from {start_date} to {end_date} was added successfully!")
+            messages.success(request, f"Booking for {{booking.property_listing.title }} from {start_date} to {end_date} was added successfully!")
             print(f"Redirecting to booking success for booking ID: {booking.id}")  # Debugging statement
             return redirect('booking_success', booking_id=booking.id)  # Redirect to the success page with booking ID
         
