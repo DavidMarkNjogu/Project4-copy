@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError  # Importing ValidationError 
 
 def book_property(request):
     if request.method == 'POST':
-        property_id = request.POST.get('property_id')
+        property_id = request.POST.get('property_id') # Get the selected property ID
         start_date = request.POST.get('start_date')
         end_date = request.POST.get('end_date')
 
@@ -26,4 +26,8 @@ def book_property(request):
             messages.error(request, str(e))  # Capture validation errors
             return render(request, 'bookings/book_form.html', {'error_message': str(e)})
 
-    return render(request, 'bookings/book_form.html')  # Render the booking form
+    # Fetch available listings to display in the dropdown
+    listings = PropertyListing.objects.filter(status='Available')  # Adjust the filter as needed      
+    return render(request, 'bookings/book_form.html', {'listings': listings})  # Pass listings to the template
+
+    #return render(request, 'bookings/book_form.html')  # Render the booking form
