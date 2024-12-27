@@ -4,7 +4,7 @@ from listings.models import Booking  # Importing the Booking model
 from .models import PropertyListing  # Importing the PropertyListing model
 from django.core.exceptions import ValidationError  # Importing ValidationError for handling validation errors
 
-def book_property(request):
+def book_listing(request):
     if request.method == 'POST':
         property_id = request.POST.get('property_id') # Get the selected property ID
         start_date = request.POST.get('start_date')
