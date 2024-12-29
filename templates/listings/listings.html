@@ -7,7 +7,7 @@
     <ul>
         {% for listing in listings %}
             <li>
-                <a href="{% url 'listing_detail' listing.id %}">{{ listing.title }}</a>: {{ listing.description }}
+                <a href="{% url 'listings:listing_detail' listing.id %}">{{ listing.title }}</a>: {{ listing.description }}
                 {% if listing.image %}
                     <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
                 {% endif %}
