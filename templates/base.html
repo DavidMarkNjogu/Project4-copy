@@ -1,32 +1,154 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Haven Heights{% endblock %}</title>
-    {% load static %}
-    <!-- <link rel="stylesheet"  href="{% static 'style/css/main.css' %}"> -->
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'style/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Base CSS and JS -->
+    <link rel="stylesheet" href="{% static 'style/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/css/Responsive.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/brainwave-symbol.svg' %}" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- FONTS AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {% block head %}
+        <!-- Placeholder for additional head elements -->
+    {% endblock %}
 </head>
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'listings' %}">Listings</a></li>
+<header id="myDiv" class="header">
+        <a href="/" class="logo">
+            <img id="logo" src="{% static 'images/Coolhome.svg' %}" alt="" width="220">
+            <img id="scrolledLogo" src="{% static 'images/coolhomebl.svg' %}" alt="" width="220" style="display: none;">
+        </a>
+        <nav>
+        <ul class="nav-ul">
+            <div class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'listings:listings_list' %}">Properties</a></li>
+                <li><a href="">Rent</a></li>
+                <li><a href="">Buy</a></li>
+           
+            </div>
+            <div class="navbar-btn" style="display: flex;justify-content: center;align-items: center;gap: 1.6em;">
+
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+
+                <a href="#">
+                    <button>Free Quote</button>
+                </a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </ul>
     </nav>
     </header>
    
-    <main class="container">
+    <main>
         {% block content %}
-        <!-- Page-specific content will go here -->
-        <h1>Haven Heights</h1>
-        <br><hr> <br>
-        <p>Welcome to Haven Heights, your gateway to heavenly bliss. Immerse yourself in an endless array of sheer class and elegance exhibited by our state-of-the-art exquisite properties that span a wide field of options. You are literally just spoilt for choice!!It doesn't get any better than this</p>
+            <!-- Placeholder for the main content -->
         {% endblock %}
     </main>
-    <footer>
-        <p>&copy; 2024 Haven Heights</p>
-    </footer>
+     
+<!-- FOOTER START -->
+<div class="footer">
+    <div class="footer-container">
+<div class="footer-wrapper">
+    <div class="footer-company">
+        <a href="/">
+            <img src="{% static 'images/Coolhome.svg' %}" alt="" width="220">
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam ad in fugit doloremque minus et deserunt minima aspernatur odit optio, eligendi quaerat, dicta totam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam ad in fugit doloremque minus et deserunt minima aspernatur odit optio, eligendi quaerat, dicta totam debitis.</p>
+    </div>
+
+    <!-- links -->
+    <div class="footer-links-wrapper">
+<div class="footer-links">
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href="">All Properties</a></li>
+        <li><a href="">Listings For Rent</a></li>
+        <li><a href="">Listings For Buy</a></li>
+        <li><a href="">News & Blog</a></li>
+        <li><a href="">Amenities</a></li>
+
+    </ul>
+</div>
+<div class="footer-links">
+    <h3>Locations</h3>
+    <ul>
+        <li><a href="">Chicago</a></li>
+        <li><a href="">New York</a></li>
+        <li><a href="">Seattle</a></li>
+        <li><a href="">California</a></li>
+        <li><a href="">Las Vegas</a></li>
+    </ul>
+</div>
+<div class="footer-links">
+    <h3>Contact</h3>
+    <ul>
+        <li><a href="tel:123-456-7890"><i class="fa-solid fa-phone fa-lg"></i> 123-456-7890</a></li>
+        <li><a href="tel:987-654-3210"><i class="fa-solid fa-phone fa-lg"></i> 987-654-3210</a></li>
+        <li><a href="mailto:example@example.com"><i class="fa-solid fa-envelope fa-lg"></i> help@havenheights.com</a></li>
+        <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope fa-lg"></i> info@havenheights.com</a></li>
+        <li class='footer-lnk'><a href="https://goo.gl/maps/qVXPpH5RqkC2" target="_blank"><i class="fa-solid fa-location-dot fa-lg"></i> 123 Main St, City, State, Zip</a></li>
+    </ul>
+</div>
+<div class="footer-links">
+    <h3>Company</h3>
+    <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Privacy Policy</a></li>
+    </ul>
+</div>
+    </div>
+</div>
+<div class="footer-copyright">
+    <p>Copyright &copy; <span id="year"></span> All rights reserved | <span style="color: var(--maroon);">Haven Heights</span></p>
+    <div class="footer-social">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- FOOTER END -->
+
+
+   <!-- "Go to top" button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-jet-fighter-up"></i>
+</button>
+
+
+   <!-- Custom JS  -->
+<script src="{% static 'style/js/main.js' %}"></script>
+
+<!-- Bootstrap JS Bundle with Popper -->
+   <script src="{% static 'style/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
 </body>
 </html>
