@@ -1,0 +1,1676 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Haven Heights{% endblock %}
+
+       
+{% block head %}
+     {{ block.super }} <!-- # This includes the base head content # -->
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- GOOGLE FONTS END -->
+
+<!-- FONTS AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- CSS -->
+    <link rel="stylesheet" href="{% static 'style/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/css/Responsive.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/brainwave-symbol.svg' %}" type="image/x-icon">
+    
+    {% endblock %}
+
+    {% block content %}
+        
+    <!-- HERO START -->
+<section class="hero">
+    <div class="hero-bg-lnes">
+        <img src="{% static 'images/blending.svg' %}" alt="">
+    </div>
+    <div class="spot"></div>
+    <div class="hero-container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+              <h1>Find A <span class="hero-span">House<img class="hero-img-1" src="{%static 'images/curve.png' %}" alt="" width="240"></span> That Suits You.</h1>                 <p></p>
+                <p>Welcome to Haven Heights, your gateway to heavenly bliss. Immerse yourself in an endless array of sheer class and elegance exhibited by our state-of-the-art exquisite properties that span a wide field of options. You are literally just spoilt for choice!!It doesn't get any better than this</p>
+                <div class="hero-btn">
+                    <a href="">
+                <button>Find A home</button>
+            </a>
+            <a href="">
+                <button>About Us</button>
+            </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stats">
+                    <h2>1200 <span>+</span></h2>
+                    <p>Properties</p>
+                </div>
+                <div class="stats">
+                    <h2>1000 <span>+</span></h2>
+                    <p>Customers</p>
+                </div>
+                <div class="stats">
+                    <h2>200 <span>+</span></h2>
+                    <p>Agents</p>
+                </div>
+                <div class="stats">
+                    <h2>20 <span>+</span></h2>
+                    <p>Countries</p>
+                </div>
+            </div>
+            </div>
+            <div class="hero-image">
+                <img src="{%static 'images/hero.svg' %}" alt="hero Images" height="570">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HERO END -->
+
+<!-- PROPERTY TYPE START -->
+<div class="property">
+    <div class="property-container">
+        <div class="testimonials-cont">
+            <span>Our Properties</span>
+            <h2>Here are some of our Properties.</h2>
+        </div>
+        <div class="property-wrapper">
+        <!-- PROP ONE -->
+        <div class="property-img">
+            <a href="">
+            <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h31.jpg" alt="">
+            <div class="property-img-cont">
+                <h2>Apartments</h2>
+                <p>36 Properties</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        </div>
+        <!-- END -->
+
+        <!-- PROP ONE -->
+        <div class="property-img">
+            <a href="">
+            <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h35.jpg" alt="">
+            <div class="property-img-cont">
+                <h2>Office</h2>
+                <p>14 Properties</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        </div>
+        <!-- END -->
+
+        <!-- PROP ONE -->
+        <div class="property-img">
+            <a href="">
+            <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h34.jpg" alt="">
+            <div class="property-img-cont">
+                <h2>Health Care</h2>
+                <p>03 Properties</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        </div>
+        <!-- END -->
+
+        <!-- PROP ONE -->
+        <div class="property-img">
+            <a href="">
+            <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h32.jpg" alt="">
+            <div class="property-img-cont">
+                <h2>Industrial</h2>
+                <p>01 Property</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        </div>
+        <!-- END -->
+
+        <!-- PROP ONE -->
+        <div class="property-img">
+            <a href="">
+            <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h33.jpg" alt="">
+            <div class="property-img-cont">
+                <h2>Hotel</h2>
+                <p>12 Properties</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        </div>
+        <!-- END -->
+    </div>
+    </div>
+    
+</div>
+
+<!-- END -->
+
+<!-- OUR ADDS SECTION -->
+<div class="our-adds">
+    <div class="our-adds-container">
+        <div class="our-adds-wrapper">
+
+            <!-- FIRST BOX -->
+           <div class="our-adds-cont">
+            <h2>The new way to find your new home</h2>
+            <p>Find your dream place to live in with more than 10k+ properties listed.</p>
+            <a href="">
+                <button class="adds-btn">Browse Properties</button>
+            </a>
+            <img src="{% static 'images/adds.png' %}" alt="">
+           </div>
+           <!-- FORST BOX END -->
+
+           <!-- SECOND BOX -->
+           <div class="our-adds-cont-2">
+            <!-- OUR ADDS BOX START -->
+            <div class="our-adds-bx">
+                <!-- ONE -->
+                <div class="our-adds-in">
+                    <i class="fa-solid fa-house-circle-check"></i>
+                    <h3>Property insurance</h3>
+                    <p>We offer customer property protection of liability coverage and insurance for their better life.</p>
+                </div>
+                <!-- END -->
+                
+                <!-- TWO -->
+                <div class="our-adds-in">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h3>Best Price</h3>
+                    <p>We offer customer property protection of liability coverage and insurance for their better life.</p>
+                </div>
+                <!-- END -->
+            </div>
+            <!-- OUT ADDS BOX END -->
+
+            <!-- OUR ADDS BOX 2 START -->
+            <div class="our-adds-bx">
+                 <!-- ONE -->
+                <div class="our-adds-in">
+                    <i class="fa-solid fa-house-circle-check"></i>
+                    <h3>Lowest Commission</h3>
+                    <p>We offer customer property protection of liability coverage and insurance for their better life.</p>
+                </div>
+                <!-- END -->
+                
+                <!-- TWO -->
+                <div class="our-adds-in">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h3>Overall Control</h3>
+                    <p>We offer customer property protection of liability coverage and insurance for their better life.</p>
+                </div>
+                <!-- END -->
+            </div>
+            <!-- OUR ADDS BOX 2 END -->
+
+           </div>
+
+           <!-- SECOND BOX END -->
+        </div>
+    </div>
+</div>
+
+<!-- END -->
+
+<!-- FEATURED -->
+<div class="featured">
+    <div class="featured-container">
+
+        <div class="properties-toggle">
+            <div class="testimonials-cont" style="padding-bottom: 2em;">
+                <span>Featured Listings</span>
+                <h2>Our Top Featured Listings.</h2>
+            </div>
+            
+            <div class="right-toggle">
+                <button class="active">All</button>
+                <button>Rent</button>
+                <button>Sale</button>
+            </div>
+        </div>
+
+        <div class="featured-wrapper">
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-1.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p>FOR RENT</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Francis Njuguna</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Francis Njuguna</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+             <!-- CARD ONE -->
+             <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-1.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p>FOR RENT</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Francis Njuguna</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+            
+  <!-- CARD ONE -->
+  <div class="featured-card">
+    <div class="featured-img">
+        <img src="{% static 'images/property-2.jpg' %}" alt="">
+        <div class="overlay"></div>
+        <p class="ov-2">FOR SALE</p>
+        <h6 class="featured-lb">FEATURED</h6>
+        <div class="featured-label">
+            <div class="label-1">
+                 <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+            </div>
+            <div class="label-2">
+                <div class="sngle-lbl">
+                    <i class="fa-solid fa-image"></i>
+                    <h4>6</h4>
+                </div>
+                <div class="sngle-lbl">
+                    <i class="fa-solid fa-film"></i>
+                    <h4>2</h4>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class="featured-h2">
+        <h3>$34,000</h3>
+        <p>/Month</p>
+    </div>
+    <h2>New Apartment Nice View</h2>
+    <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+    <div class="featured-amenities">
+        <!-- one -->
+        <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+            <div class="amenity">
+                <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                
+            </div>
+            <p>Bed rooms</p>
+        </div>
+        <!-- end -->
+        
+        <!-- one -->
+        <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+            <div class="amenity">
+                <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                
+            </div>
+            <p>Bath rooms</p>
+        </div>
+        <!-- end -->
+
+        <!-- one -->
+        <div class="amenitie">
+            <div class="amenity">
+                <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                
+            </div>
+            <p>Square Ft</p>
+        </div>
+        <!-- end -->
+
+    </div>
+    <!-- AUTHOR -->
+    <div class="featured-author">
+        <div class="author-img">
+            <img src="{% static 'images/author.jpg' %}" alt="">
+            <div class="author-details">
+                <a href=""><h3>Davis Smith</h3></a>
+                
+                <h5>Estate Agents</h5>
+            </div>
+        </div>
+        <div class="featured-lnks">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-square-plus"></i>
+        </div>
+    </div>
+</div>
+<!-- END -->
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-3.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p>FOR RENT</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Liam Hunter</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+               <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Marcus Decker</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+        </div>
+    </div>
+</div>
+
+<!-- FEATURED END -->
+
+<!-- AMENITIES START -->
+<div class="amenities">
+    <div class="amenities-container">
+        <div class="amenities-header">
+            <div class="amenities-header-one">
+                <h2>Some Amenities We Provide.</h2>
+                <button class="amenity-btn">About Us</button>
+            </div>
+            <div class="amenities-header-two">
+               <img src="{% static 'images/amenities.jpg' %}" alt="" height="10">
+            </div>
+        </div>
+        <div class="amenities-wrapper">
+            <div class="amenities-box">
+                <div class="amenity-box">
+                   <i class="fa-solid fa-building-shield"></i>
+                    <h1>Private Security</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-parking"></i>
+                    <h1>Parking Space</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-football-ball"></i>
+                    <h1>Play Ground</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-book"></i>
+                    <h1>Library Area</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-house-medical-circle-check"></i>
+                    <h1>Medical Center</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-water-ladder"></i>
+                    <h1>Swimming Pool</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h1>Gym</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+                <div class="amenity-box">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <h1>Privacy</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AMENITIES END -->
+
+<!-- LSITINGS START -->
+<div class="featured">
+    <div class="featured-container">
+
+        <div class="properties-toggle">
+            <div class="testimonials-cont" style="padding-bottom: 2em;">
+                <span>Featured Listings</span>
+                <h2>Our Top Featured Listings.</h2>
+            </div>
+            
+            <div class="right-toggle">
+                <button class="active">All</button>
+                <button>Apartments</button>
+                <button>Offices</button>
+                <button>Health</button>
+                <button>Hotel</button>
+            </div>
+        </div>
+
+        <div class="featured-wrapper">
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-1.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p>FOR RENT</p>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Jimmy Falon</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Allegra Cole</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Jacob Blake</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Emily Houston</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-2.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p class="ov-2">FOR SALE</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Francis Njuguna</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+            <!-- CARD ONE -->
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="{% static 'images/property-3.jpg' %}" alt="">
+                    <div class="overlay"></div>
+                    <p>FOR RENT</p>
+                    <h6 class="featured-lb">FEATURED</h6>
+                    <div class="featured-label">
+                        <div class="label-1">
+                             <i class="fa-solid fa-location-dot"></i>  Belmont Gardens, Chicago
+                        </div>
+                        <div class="label-2">
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-image"></i>
+                                <h4>6</h4>
+                            </div>
+                            <div class="sngle-lbl">
+                                <i class="fa-solid fa-film"></i>
+                                <h4>2</h4>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-h2">
+                    <h3>$34,000</h3>
+                    <p>/Month</p>
+                </div>
+                <h2>New Apartment Nice View</h2>
+                <p>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood.</p>
+                <div class="featured-amenities">
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>3  <i class="fa-solid fa-bed"></i></h2>
+                            
+                        </div>
+                        <p>Bed rooms</p>
+                    </div>
+                    <!-- end -->
+                    
+                    <!-- one -->
+                    <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202);padding-right: 10px;">
+                        <div class="amenity">
+                            <h2>2  <i class="fa-solid fa-restroom"></i></h2>
+                            
+                        </div>
+                        <p>Bath rooms</p>
+                    </div>
+                    <!-- end -->
+
+                    <!-- one -->
+                    <div class="amenitie">
+                        <div class="amenity">
+                            <h2>2350  <i class="fa-regular fa-square"></i></h2>
+                            
+                        </div>
+                        <p>Square Ft</p>
+                    </div>
+                    <!-- end -->
+
+                </div>
+                <!-- AUTHOR -->
+                <div class="featured-author">
+                    <div class="author-img">
+                        <img src="{% static 'images/author.jpg' %}" alt="">
+                        <div class="author-details">
+                            <a href=""><h3>Francis Njuguna</h3></a>
+                            
+                            <h5>Estate Agents</h5>
+                        </div>
+                    </div>
+                    <div class="featured-lnks">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+        </div>
+        <div class="prop">
+        <button class="prty-btn">View all Locations</button>
+    </div>
+    </div>
+</div>
+
+<!-- LISTINGS END -->
+
+<!-- LOCATIONS START -->
+<div class="locations">
+    <div class="location-container">
+        <div class="location-hd">
+            <div class="testimonials-cont" style="padding-bottom: 2em;">
+                <span>Our Top Locations</span>
+                <h2>Top Locations we operate in.</h2>
+            </div>
+    </div>
+        <div class="location-wrapper">
+            <div class="location-single-wrapper-2">
+                <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h61.jpg" alt="">
+                <div class="location-single-in">
+                    <p>8 Properties</p>
+                    <h2>New York</h2>
+                </div>
+            </div>
+       
+
+        <div class="location-double-wrapper">
+            <div class="location-1">
+                <div class="location-single-wrapper">
+                    <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h62.jpg" alt="">
+                    <div class="location-single-in">
+                        <p>4 Properties</p>
+                        <h2>Chicago</h2>
+                    </div>
+                    </div>
+                <div class="location-single-wrapper">
+                    <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h63.jpg" alt="">
+                    <div class="location-single-in">
+                        <p>11 Properties</p>
+                        <h2>Las Vegas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="location-2">
+                <div class="location-single-wrapper">
+                    <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h64.jpg" alt="">
+                    <div class="location-single-in">
+                        <p>18 Properties</p>
+                        <h2>California</h2>
+                    </div>
+                </div>
+                <div class="location-single-wrapper">
+                    <img src="https://demoapus1.com/justhome/wp-content/uploads/2024/03/h65.jpg" alt="">
+                    <div class="location-single-in">
+                        <p>6 Properties</p>
+                        <h2>Seattle</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prop" style="padding-top: 2em;">
+        <button class="prty-btn">View all Locations</button>
+    </div>
+    </div>
+</div>
+
+<!-- LOCATIONS END -->
+
+<!-- TEAM START -->
+<div class="team">
+    <div class="team-container">
+        <div class="testimonials-cont">
+            <span>Our Team Members</span>
+            <h2>Some of our Team Members.</h2>
+        </div>
+        <div class="team-wrapper">
+            <div class="team-single-wrapper">
+                <img src="{% static 'images/team1.jpg' %}" alt="">
+                <div class="teams-social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="teams-cont">
+                    <h2>Francis Njuguna</h2>
+                    <p>Ceo & Founder</p>
+                </div>
+            </div>
+            <div class="team-single-wrapper">
+                <img src="{% static 'images/team3.jpg' %}" alt="">
+                <div class="teams-social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="teams-cont">
+                    <h2>Emily Johnson</h2>
+                    <p>Estate Agents</p>
+                </div>
+            </div>
+            <div class="team-single-wrapper">
+                <img src="{% static 'images/team2.jpg' %}" alt="">
+                <div class="teams-social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="teams-cont">
+                    <h2>John Doe </h2>
+                    <p>Estate Agents</p>
+                </div>
+            </div>
+            <div class="team-single-wrapper">
+                <img src="{% static 'images/team4.jpg' %}" alt="">
+                <div class="teams-social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="teams-cont">
+                    <h2>Alex Smith </h2>
+                    <p>Estate Agents</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TEAM END -->
+
+<!-- TESTIMONIALS START -->
+<div class="testimonials">
+    <div class="testimonials-container">
+        <div class="testimonials-cont">
+            <span>Customer Feedback</span>
+            <h2>What Our Customers Are Saying.</h2>
+        </div>
+        <div class="testimonials-wrapper">
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>Great Services!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent, I have had the pleasure of working with Just Home. They have been incredibly helpful and professional. I can't recommend them enough!</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> Francis Njuguna</h4>
+</div>
+<!-- end -->
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>Beautiuful Houses!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent, I have had the pleasure of working with Just Home. They have been incredibly helpful and professional. I can't recommend them enough!</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> Emily</h4>
+</div>
+<!-- end -->
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>Green Environment!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent, I have had the pleasure of working with Just Home. They have been incredibly helpful and professional. I can't recommend them enough!</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> Erickson</h4>
+</div>
+<!-- end -->
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>Happy Me!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent, I have had the pleasure of working with Just Home. They have been incredibly helpful and professional. I can't recommend them enough!</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> Moses</h4>
+</div>
+<!-- end -->
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>Green Experience!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent, I have had the pleasure of working with Haven Heights. They have been incredibly helpful and professional. I can't recommend them enough!</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> John</h4>
+</div>
+<!-- end -->
+            <!-- one -->
+<div class="testimonial-box">
+    <div class="test-star">
+        <div class="rank-one">
+            <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h3>professional Staff!</h3>
+        </div>
+        <div class="rank-two">
+            <img src="{% static 'images/google3.svg' %}" alt="">
+        </div>
+    </div>
+    <p>As a real estate agent,working with Haven Heights has been nothing short of seamless. Their professionalism and dedication are commendable.</p>
+    <h4><i class="fa-regular fa-thumbs-up" style="color:var(--maroon);"> &nbsp;</i> Jane</h4>
+</div>
+<!-- end -->
+
+</div>
+</div>
+</div>
+
+<!-- TESTIMONIALS END -->
+
+<!-- BLOG START -->
+<div class="blog">
+    <div class="blog-container">
+        <div class="testimonials-cont">
+            <span>Latest Stories and news</span>
+            <h2>Here Are Some Of Our Recent Articles.</h2>
+        </div>
+        <div class="blog-wrapper">
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog1.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Place to live in 2025 according to our experts</h2>
+                    <p>MARCH 3, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog3.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Places to start your famil</h2>y in 2025
+                    <p>MARCH 9, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog2.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Place to live in 2025 according to our experts</h2>
+                    <p>MARCH 15, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog4.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Place to live in 2025 according to our experts</h2>
+                    <p>MARCH 22, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog5.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Place to live in 2025 according to our experts</h2>
+                    <p>MARCH 29, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+            <!-- ONE -->
+            <div class="blog-box">
+                <img src="{% static 'images/blog6.jpg' %}" alt="">
+                <div class="overlay-2"></div>
+                <div class="blog-box-cont">
+                    <h2>The best Place to live in 2025 according to our experts</h2>
+                    <p>APRIL 4, 2024</p>
+                </div>
+            </div>
+
+            <!-- END -->
+        </div>
+    </div>
+</div>
+
+<!-- BLOG END -->
+
+<!-- CTA START -->
+<div class="cta">
+    <div class="cta-container">
+        <h1>Have a Question? We'd love to hear from you</h1>
+        <a href="">
+            <button>Contact Us</button>
+        </a>
+    </div>
+</div>
+
+<!-- CTA END -->
+
+<!-- FAQ START -->
+<section class='faq-section'>
+    <div class="faq-container">
+        <h1>Frequently <span>Asked</span> Questions</h1>
+        <div class="faq-container-wrap" id="faq-container-wrap">
+            <!-- FAQ items will be inserted here by JavaScript -->
+        </div>
+        <p style="font-size: 18px;" class="faq-p">Click <a href="" style="color: var(--maroon);">Here</a> to see more faqs, or contact us if you have more questions.</p>
+    </div>
+</section>
+<!-- FAQ END -->
+
+    {% endblock %}
