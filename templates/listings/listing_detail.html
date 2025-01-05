@@ -12,4 +12,7 @@
     <p>Location: {{ listing.location }}</p>
     <p>Posted on: {{ listing.created_at }}</p>
 
+    <a href="{% url 'listings:listing_update' listing.id %}">Update Listing</a>
+    <a href="{% url 'listings:listing_delete' listing.id %}">Delete Listing</a>
+
 {% endblock %}
