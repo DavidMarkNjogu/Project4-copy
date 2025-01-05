@@ -7,11 +7,103 @@
     <ul>
         {% for listing in listings %}
             <li>
-                <a href="{% url 'listings:listing_detail' listing.id %}">{{ listing.title }}</a>: {{ listing.description }}
+                <a href="{% url 'listings:listing_detail' listing.id %}">
+                    {{ listing.title }}
+                </a>
+                : {{ listing.description }}
                 {% if listing.image %}
                     <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
                 {% endif %}
             </li>
         {% endfor %}
     </ul>
+
+
+<div class="right-toggle">
+    <button class="active">All</button>
+    <button>Rent</button>
+    <button>Sale</button>
+</div>
+</div>
+
+<div class="featured-wrapper">
+{% for listing in listings %}
+    <!-- CARD -->
+    <div class="featured-card">
+        <div class="featured-img">
+            {% if listing.image %}
+                <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+            {% else %}
+                <img src="{% static 'images/default-property.jpg' %}" alt="Default Property Image">
+            {% endif %}
+            <div class="overlay"></div>
+            <p>{{ listing.listing_type|default:"FOR RENT" }}</p>
+            <h6 class="featured-lb">FEATURED</h6>
+            <div class="featured-label">
+                <div class="label-1">
+                    <i class="fa-solid fa-location-dot"></i> {{ listing.location|default:"Belmont Gardens, Chicago" }}
+                </div>
+                <div class="label-2">
+                    <div class="sngle-lbl">
+                        <i class="fa-solid fa-image"></i>
+                        <h4>{{ listing.image_count|default:"6" }}</h4>
+                    </div>
+                    <div class="sngle-lbl">
+                        <i class="fa-solid fa-film"></i>
+                        <h4>{{ listing.video_count|default:"2" }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-h2">
+            <h3>${{ listing.price|default:"34,000" }}</h3>
+            <p>/{{ listing.price_type|default:"Month" }}</p>
+        </div>
+        <h2>{{ listing.title|default:"New Apartment Nice View" }}</h2>
+        <p>{{ listing.description|default:"Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood." }}</p>
+        <div class="featured-amenities">
+            <!-- Bedrooms -->
+            <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                <div class="amenity">
+                    <h2>{{ listing.bedrooms|default:"3" }} <i class="fa-solid fa-bed"></i></h2>
+                </div>
+                <p>Bed rooms</p>
+            </div>
+            <!-- Bathrooms -->
+            <div class="amenitie" style="border-right: 1px solid rgb(202, 202, 202); padding-right: 10px;">
+                <div class="amenity">
+                    <h2>{{ listing.bathrooms|default:"2" }} <i class="fa-solid fa-restroom"></i></h2>
+                </div>
+                <p>Bath rooms</p>
+            </div>
+            <!-- Square Ft -->
+            <div class="amenitie">
+                <div class="amenity">
+                    <h2>{{ listing.square_ft|default:"2350" }} <i class="fa-regular fa-square"></i></h2>
+                </div>
+                <p>Square Ft</p>
+            </div>
+        </div>
+        <!-- AUTHOR -->
+        <div class="featured-author">
+            <div class="author-img">
+                <img src="{% static 'images/author.jpg' %}" alt="">
+                <div class="author-details">
+                    <a href="#"><h3>{{ listing.agent_name|default:"Francis Njuguna" }}</h3></a>
+                    <h5>{{ listing.agent_title|default:"Estate Agents" }}</h5>
+                </div>
+            </div>
+            <div class="featured-lnks">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+        </div>
+    </div>
+    <!-- END CARD -->
+{% endfor %}
+</div>
+</div>
+</div>
+
 {% endblock %}
