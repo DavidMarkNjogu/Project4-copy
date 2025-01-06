@@ -1,6 +1,7 @@
 {% extends "base.html" %}  <!-- Extending the base template -->
 
 {% block content %}
+<div class="main-container">
     <h1>Book a Property</h1>
     <form method="POST" id="bookingForm">
         {% csrf_token %}  <!-- CSRF token for security -->
@@ -33,4 +34,5 @@
             {% endfor %}
             </div>
         {% endif %}
+</div>
 {% endblock %}
