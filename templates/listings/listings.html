@@ -3,6 +3,7 @@
 
     {% block title %} Property Listings {% endblock %}
 {% block content %}
+<div class="main-container">
     <h1>Property Listings</h1>
     <ul>
         {% for listing in listings %}
@@ -17,6 +18,7 @@
             </li>
         {% endfor %}
     </ul>
+</div>    
 
 
 <div class="right-toggle">
