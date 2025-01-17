@@ -1,0 +1,21 @@
+<!-- templates/accounts/update_profile.html -->
+{% extends "base.html" %}
+
+{% block title %}Update Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Update Profile</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div>
+            <label for="id_birth_date">Birth Date (DD/MM/YYYY):</label>
+            {{ form.birth_date }}
+        </div>
+        <button type="submit">Update Profile</button>
+    </form>
+    <!-- Link back to profile page -->
+    <a href="{% url 'profile' %}" class="btn btn-secondary">Back to Profile</a>
+</div>
+{% endblock %}
